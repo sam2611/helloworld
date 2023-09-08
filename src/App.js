@@ -8,6 +8,8 @@ import Counter from './components/Counter';
 import Functionclick from './components/Functionclick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
+import NameList from './components/NameList';
 
 function App() {
   return (
@@ -26,7 +28,9 @@ function App() {
      {/* <Counter/> */}
      {/* <Functionclick/> */}
      {/* <ClassClick/> */}
-     <EventBind/>
+     {/* <EventBind/> */}
+     {/* <ParentComponent/> */}
+     <NameList/>
     </div> 
   );
 }
