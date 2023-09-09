@@ -15,12 +15,13 @@ import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
 import './appStyles.css'
 import styles from './appStyles.module.css'
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='error'>Error</h1>
-      <h1 className={styles.success}>Success</h1>
+      {/* <h1 className='error'>Error</h1> */}
+      {/* <h1 className={styles.success}>Success</h1> */}
       {/* <Greet name="Bruce" heroName="Batman"/>
       <p>This is Children props</p>
       <Greet name="Clark" heroName="Superman"/>
@@ -41,6 +42,7 @@ function App() {
      {/* <UserGreeting/> */}
      {/* <Stylesheet primary={true}/> */}
      {/* <Inline>Inline</Inline> */}
+     <Form/>
     </div> 
   );
 }
