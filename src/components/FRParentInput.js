@@ -10,7 +10,7 @@ class FRParentInput extends Component {
   render() {
     return (
       <div>
-        <FRInput ref={this.inputRef}/>
+        <FRInput ref={this.inputRef} />
         <button>Focus input</button>
       </div>
     )
