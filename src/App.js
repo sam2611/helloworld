@@ -27,6 +27,8 @@ import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 
 function App() {
@@ -63,17 +65,20 @@ function App() {
      {/* <FocusInput/> */}
      {/* <FRParentInput/> */}
      {/* <PortalDemo/>  */}
-      <ErrorBoundary>  {/*catch the error and display the fall back ui */}
-     <Hero heroName="Batman"/>
-     </ErrorBoundary>
+      {/* <ErrorBoundary>  catch the error and display the fall back ui */}
+     {/* <Hero heroName="Batman"/> */}
+     {/* </ErrorBoundary> */}
 
-     <ErrorBoundary>
-     <Hero heroName="Superman"/>
-     </ErrorBoundary>
+     {/* <ErrorBoundary> */}
+     {/* <Hero heroName="Superman"/> */}
+     {/* </ErrorBoundary> */}
      
-     <ErrorBoundary>
-     <Hero heroName="Joker"/>
-     </ErrorBoundary>
+     {/* <ErrorBoundary> */}
+     {/* <Hero heroName="Joker"/> */}
+     {/* </ErrorBoundary> */}
+
+     <ClickCounter/>
+     <HoverCounter/> 
 
     </div> 
   );
