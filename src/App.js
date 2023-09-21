@@ -29,6 +29,10 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import Countertwo from './components/Countertwo';
 
 
 function App() {
@@ -77,9 +81,22 @@ function App() {
      {/* <Hero heroName="Joker"/> */}
      {/* </ErrorBoundary> */}
 
-     <ClickCounter name= "sakshi"/>
-     <HoverCounter/> 
+     {/* <ClickCounter name= "sakshi"/> */}
+     {/* <HoverCounter/>  */}
+     {/* <ClickCounterTwo/> */}
+     {/* <HoverCounterTwo/> */}
+     {/* RENDER PROP */}
+    {/* in react it is possible to use a prop whose value is a function to controll what is being rendered */}
+    {/* sharing code between component using prop whose value is a function */}
+     {/* <User render={(isLoggedIn)=> isLoggedIn? 'Sakshi': 'Guest'}/> */}
 
+     <Countertwo render={(count, incrementcount)=> 
+        (<ClickCounterTwo count={count} incrementcount={incrementcount}/>)}
+     />
+
+<     Countertwo render={(count, incrementcount)=> 
+        (<HoverCounterTwo count={count} incrementcount={incrementcount}/>)}
+     />
     </div> 
   );
 }
