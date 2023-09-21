@@ -33,8 +33,10 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 import Countertwo from './components/Countertwo';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/useContext';
 
-
+ 
 function App() {
   return (
     <div className="App">
@@ -90,13 +92,16 @@ function App() {
     {/* sharing code between component using prop whose value is a function */}
      {/* <User render={(isLoggedIn)=> isLoggedIn? 'Sakshi': 'Guest'}/> */}
 
-     <Countertwo render={(count, incrementcount)=> 
+     {/* <Countertwo render={(count, incrementcount)=> 
         (<ClickCounterTwo count={count} incrementcount={incrementcount}/>)}
-     />
+     /> */}
 
-<     Countertwo render={(count, incrementcount)=> 
+      {/* <Countertwo render={(count, incrementcount)=> 
         (<HoverCounterTwo count={count} incrementcount={incrementcount}/>)}
-     />
+     /> */}
+    <UserProvider value="Sakshi">
+    <ComponentC/>
+    </UserProvider>
     </div> 
   );
 }
