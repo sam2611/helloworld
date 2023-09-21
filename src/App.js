@@ -77,7 +77,7 @@ function App() {
      {/* <Hero heroName="Joker"/> */}
      {/* </ErrorBoundary> */}
 
-     <ClickCounter/>
+     <ClickCounter name= "sakshi"/>
      <HoverCounter/> 
 
     </div> 
