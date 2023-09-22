@@ -35,6 +35,7 @@ import User from './components/User';
 import Countertwo from './components/Countertwo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/useContext';
+import PostList from './components/PostList';
 
  
 function App() {
@@ -99,9 +100,10 @@ function App() {
       {/* <Countertwo render={(count, incrementcount)=> 
         (<HoverCounterTwo count={count} incrementcount={incrementcount}/>)}
      /> */}
-    <UserProvider value="Sakshi">
-    <ComponentC/>
-    </UserProvider>
+    {/* <UserProvider value="Sakshi"> */}
+    {/* <ComponentC/> */}
+    {/* </UserProvider> */}
+    <PostList/>
     </div> 
   );
 }
