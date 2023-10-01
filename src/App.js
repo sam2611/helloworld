@@ -36,6 +36,7 @@ import Countertwo from './components/Countertwo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/useContext';
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
  
 function App() {
@@ -103,7 +104,8 @@ function App() {
     {/* <UserProvider value="Sakshi"> */}
     {/* <ComponentC/> */}
     {/* </UserProvider> */}
-    <PostList/>
+    {/* <PostList/> */}
+    <PostForm/>
     </div> 
   );
 }

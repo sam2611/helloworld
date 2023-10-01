@@ -12,7 +12,7 @@ class PostList extends Component {
     }
 
     componentDidMount(){
-        axios.get('https://jsonplaceholder.typicode.com/posts1') // accepts api end point as argument
+        axios.get('https://jsonplaceholder.typicode.com/posts') // accepts api end point as argument
         .then(response=>{
             console.log(response)
             this.setState({posts: response.data})
